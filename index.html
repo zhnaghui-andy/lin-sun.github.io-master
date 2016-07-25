@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>我的个人主页</title>
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link href="css/plugins.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <div id="header">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">
+      <div class="h1"><span></span></div>
+      <div class="h2"><span></span></div>
+    </label>
+    <ul id="menu">
+      <li data-menuanchor="page1" class="active">个人主页</li>
+      <li data-menuanchor="page2">关于我</li>
+      <li data-menuanchor="page3">我的技能</li>
+      <li data-menuanchor="page4">作品展示</li>
+      <!-- <li data-menuanchor="page5">工作经历</li> -->
+      <li data-menuanchor="page5">联系我</li>
+    </ul>
+  </div>
+  <div id="fullpage">
+    <div class="section" id="home">
+      <div class="banner">
+        <div class="banner-text">
+          <h1>欢迎来到我的个人主页</h1>
+          <p>当有人逼迫你去突破自己，你要感恩他。
+他是你生命中的贵人,也许你会因此而改变和蜕变。
+当没有人逼迫你，请自己逼迫自己，因为真正的改变是自己想改变。
+蜕变的过程是很痛苦的，但每一次的蜕变都会有成长的惊喜。
+
+          </p>
+          <p class="name">沃伦·巴菲特</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="about">
+      <div class="row">
+        <h2 class="title">关于我</h2>
+        <div class="row title-img">
+          <img src="./image/about.png" alt="">
+        </div>
+        <div class="row">
+          <div class="large-3 columns small-12">
+            <div class="profile-pic">
+              <img src="./image/1.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="large-9 columns small-12">
+            <div class="my-referral">
+              <p>嗨，各位HR，我是张辉，一个前端工程师。从大学开始接触前端这个岗位，精通div+css布局，精通js代码的编写，熟练html5+css3，jquery，angular，ajax，响应式布局，移动端开发等前端技术的使用。我是一个有梦想，有追求的年轻人。我很热爱前端这个岗位，我期望能在这个广阔的天地里展示自己的才能，不断实现自我的人生价值和追求的目标。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" id="skills">
+      <div class="row">
+        <h2 class="title">我的技能</h2>
+        <div class="row title-img">
+          <img src="./image/skill.png">
+        </div>
+        <ul class="skills large-8">
+          <li><span class="bar-expand javascript"></span><em>Javascript</em></li>
+          <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+          <li><span class="bar-expand css3"></span><em>CSS3</em></li>
+          <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+          <li><span class="bar-expand angular"></span><em>angular</em></li>
+          <li><span class="bar-expand angular"></span><em>bootstrap</em></li>
+        </ul>
+      </div>
+    </div>
+    <div id="page-work" class="section">
+      <div class="my-work-container">
+        <div class="site-inner">
+          <h2 class="title">我的作品</h2>
+          <div class="row title-img">
+            <img src="./image/port.png">
+          </div>
+        </div>
+
+        <a href="#" class="mobile-filter-select">Filter</a>
+        <nav id="work-filter">
+          <a href="#" class="filter-link active" data-group="all">全部作品</a>
+          <a href="#" class="filter-link" data-group="landingpage">移动端</a>
+          <a href="#" class="filter-link" data-group="webdesign">网站类</a>
+          <a href="#" class="filter-link" data-group="icondesign">游戏类</a>
+          <a href="#" class="filter-link" data-group="template">应用类</a>
+        </nav>
+
+        <section id="work-grid" class="site-inner">
+
+          <div class="work-item" data-groups='["all", "landingpage"]' data-url="/360shop">
+            <figure class="image-container"><img src="image/360.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/360shop/index.html">360商城</a></h2>
+            <p class="copy-03">移动端布局</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/yt">
+            <figure class="image-container"><img src="image/yt.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/yintai1/index.html">银泰网</a></h2>
+            <p class="copy-03">布局+JS</p>
+          </div>
+
+         <!--  <div class="work-item" data-groups='["all", "landingpage"]' data-url="/weixin">
+            <figure class="image-container"><img src="image/wx.png" /></figure>
+            <h2 class="heading h-02">微信</h2>
+            <p class="copy-03">angular</p>
+          </div> -->
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/qqmusic">
+            <figure class="image-container"><img src="image/11.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/bdyq/index.html">百度舆情</a></h2>
+            <p class="copy-03">jquery+html5</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/jd">
+            <figure class="image-container"><img src="image/jd.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/jd/index.html">京东</a></h2>
+            <p class="copy-03">布局+JS</p>
+          </div>
+
+          <!-- <div class="work-item" data-groups='["all", "icondesign"]' data-url="/typegame">
+            <figure class="image-container"><img src="image/type.jpg" /></figure>
+            <h2 class="heading h-02">打字游戏</h2>
+            <p class="copy-03">javascript</p>
+          </div> -->
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/suning">
+            <figure class="image-container"><img src="image/qjdy.jpg" /></figure>
+            <h2 class="heading h-02"><a href="http://www.qjdycy.net/index.aspx">祁县乔家大院醋业有限公司</a></h2>
+            <p class="copy-03">项目</p>
+          </div>
+
+          <!-- <div class="work-item" data-groups='["all", "webdesign"]' data-url="/baidu">
+            <figure class="image-container"><img src="image/bd.jpg" /></figure>
+            <h2 class="heading h-02">百度未来商店</h2>
+            <p class="copy-03">响应式布局+CSS3</p>
+          </div> -->
+
+          <!-- <div class="work-item" data-groups='["all", "template"]' data-url="/TODO">
+            <figure class="image-container"><img src="image/todos.jpg" /></figure>
+            <h2 class="heading h-02">TODOS</h2>
+            <p class="copy-03">jquery</p>
+          </div> -->
+
+         <!--  <div class="work-item" data-groups='["all", "icondesign"]' data-url="/sweep">
+            <figure class="image-container"><img src="image/sl.jpg" /></figure>
+            <h2 class="heading h-02">扫雷</h2>
+            <p class="copy-03">jquery</p>
+          </div> -->
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/apple">
+            <figure class="image-container"><img src="image/apple.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/apple/index.html">苹果</a></h2>
+            <p class="copy-03">响应式布局</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/apple">
+            <figure class="image-container"><img src="image/sz.jpg" /></figure>
+            	<a href="http://zhanghuisz.duapp.com/" target="_Blank"><h2 class="heading h-02">深圳创新有限公司</h2></a>
+            <p class="copy-03">项目</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "template"]' data-url="/Reminders">
+            <figure class="image-container"><img src="image/Reminders.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/icloud/index.html">提醒事项</a></h2>
+            <p class="copy-03">angular</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "icondesign"]' data-url="/  ">
+            <figure class="image-container"><img src="image/tcs.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/tanchishe/index.html">贪吃蛇</a></h2>
+            <p class="copy-03">jquery</p>
+          </div>
+
+          <div class="work-item" data-groups='["all", "webdesign"]' data-url="/wangyi">
+            <figure class="image-container"><img src="image/wy.jpg" /></figure>
+            <h2 class="heading h-02"><a href="https://zhnaghui-andy.github.io/wangyi/index.html">网易邮箱6.0</a></h2>
+            <p class="copy-03">fullpage.js</p>
+          </div>
+         <!--  <div class="work-item" data-groups='["all", "icondesign"]' data-url="/gobang">
+            <figure class="image-container"><img src="image/wzq.png" /></figure>
+            <h2 class="heading h-02">五子棋</h2>
+            <p class="copy-03">canvas</p>
+          </div> -->
+
+          <!-- <div class="work-item" data-groups='["all", "template"]' data-url="/clock">
+            <figure class="image-container"><img src="image/zb.jpg" /></figure>
+            <h2 class="heading h-02">钟表</h2>
+            <p class="copy-03">canvas</p>
+          </div> -->
+
+          <div class="shuffle__sizer"></div>
+        </section>
+      </div>
+    </div>
+    <div class="section" id="relation">
+      <div class="row">
+        <h2 class="title">联系我</h2>
+        <div class="row title-img">
+          <img src="./image/con1.png" alt="">
+        </div>
+
+        <div class="relation-content large-6 small-12">
+            <div class="img">
+              <img src="./image/erwima.jpg" alt="">
+              <div>手机扫描二维码</div>
+            </div>
+            <div class="lianxi">
+              <p class="iphone">手机：18334770214</p>
+              <p class="emal">邮箱：m18334770214@163.com</p>
+              <p class="qq">QQ：2318316330</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
